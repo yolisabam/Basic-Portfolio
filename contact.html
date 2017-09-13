@@ -4,40 +4,60 @@
 <head>
   <meta charset="UTF-8">
   <title>Yolisa Bam</title>
-  <button><h1 id="my-name">Yolisa Bam</h1></button>
   <!-- linking in CSS -->
+  <link rel="stylesheet" type="text/css" href="assets/css/reset.css">
   <link rel="stylesheet" type="text/css" href="assets/css/style.css">
 </head>
-<nav>
-      <a href="About">About</a> | 
-      <a href="Portfolio">Portfolio</a> | 
-      <a href="Contact"> Contact</a> 
-</nav>
-<br>
-<body>
-	<div class="FormContainer">
-    <h2>Contact</h2>
-		<form id="usrform">
-  			First name:<br>
-  			<input type="text" name="firstname">
-  			<br>
-  			Last name:<br>
-  			<input type="text" name="lastname">
-  			<br>
-  			Message<br>
-			<textarea rows="4" cols="50" name="message" form="usrform"></textarea>
-  			<br><br>
-  			<input type="submit" value="Submit">
-		</form> 
-	</div>
-	<div class="ContactContainer">
-	Connect with Me<br><br>
-    <div class="clear">
-		  <img class="ContactImage" src="assets/images/if_github_square_107105.png" alt="Github">
-		  <img class="ContactImage" src="assets/images/if_linkedin_square_color_107091.png" alt="LinkedIn">   
-		  <img class="ContactImage" src="assets/images/if_stackoverflow_273179.png" alt="StackOverflow">
-     </div> 
-	</div>
+
+<body class="bg">
+  <header>
+    <div class="header-content clearfix">
+    <div id="logo">
+        <h1>Yolisa Bam</h1>
+    </div>
+
+  
+    <nav id="menu">
+      <a href="#">About</a> | 
+      <a href="#">Portfolio</a> | 
+      <a href="#"> Contact</a> 
+    </nav>
+   </div> 
+</header>
+	<div class="main-content clearfix">
+      <div class="FormContainer">
+        <div class="content-wrapper">
+            <h2>Contact</h2>
+              <div class="inside-content-wrapper">
+            		  <form id="usrform">
+              			First name:<br>
+              			<input type="text" name="firstname">
+              			<br>
+              			Last name:<br>
+              			<input type="text" name="lastname">
+              			<br>
+              			Message<br>
+            			<textarea rows="4" cols="50" name="message" form="usrform"></textarea>
+              			<br><br>
+              			<input type="submit" value="Submit">
+            		</form>
+              </div>  
+         </div>    
+    	</div>
+
+    	<div class="ContactContainer" id="contact-me">
+        <div class="content-wrapper">
+    	   <h2>Connect with Me</h2>
+          <div class="inside-content-wrapper"        
+              <!-- Linkedin -->
+              <img src="assets/images/if_linkedin_square_color_107091.png" alt="Linkedin">
+              <!-- Github -->
+              <img src="assets/images/if_github_square_107105.png" alt="Github">
+              <!-- Stack Overflow -->
+              <img src="assets/images/if_stackoverflow_273179.png" alt="stackoverflow"> 
+          </div>    
+    	</div>
+   </div>   
 </body>
 <br>
 <div class="clear">

@@ -10,7 +10,7 @@ body {
     flex-direction:column;
 
 }
-h1{ float: left;
+h1{ 
     padding: 10px;
  }
 
@@ -47,31 +47,20 @@ header {
 #menu {
     float:right;
     margin-right: 20px
+    margin-top: 20px;
 }
 
 #contact-me img {
     width:42px;
     height:42px;
     border:0;
+
 }
-
-/*#logo-text h1 {
-    background-color:#4aaaa5;
-    color: white;
-    font-size: 30px;
-    font-family:'Georgia', Times, Times New Roman, serif;
-    height:70px;
-    margin-top:29px;
-    padding-top: 20px;
-
-}*/
-
-
 
 #logo-text {
     /*position:relative;
     */
-    /*margin-top:-20px;*/
+    margin-top:20px;
     background-color: #4aaaa5;
     color: white;
     font-size: 32px;
@@ -91,6 +80,7 @@ header {
 .ContactContainer {
     width:270px;
     background-color: #ffffff;
+    margin-left: 25px;
     float: left;   
 
 }
@@ -105,6 +95,7 @@ header {
 .header-content {
     max-width: 960px;
     margin: 0 auto;
+    height: 70px;
 }
 
 .content-wrapper {

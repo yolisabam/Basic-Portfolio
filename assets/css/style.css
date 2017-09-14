@@ -15,6 +15,14 @@ h1{
     font-weight: bold;
  }
 
+a:hover {
+    color:#4aaaa5;
+} 
+
+a:focus {
+    color:#e89f0c;
+}
+
 li {
     display:inline-block;
     color: grey;
@@ -77,13 +85,14 @@ header {
 }
 
 
-.FormContainer {
+.LargerBoxContainer {
 	width:650px;
     border-radius: 5px;
     background-color: #ffffff;
     float: left;
     margin-bottom:20px;
 }
+
 
 .ContactContainer {
     width:270px;

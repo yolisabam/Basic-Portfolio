@@ -1,4 +1,4 @@
-/*CONTACT PAGE CSS*/
+/*CSS FOR ALL PAGES*/
 html, body {
     height: 100%;
 
@@ -10,6 +10,7 @@ body {
     flex-direction:column;
 
 }
+
 h1{ 
     padding: 10px;
     font-weight: bold;
@@ -44,14 +45,32 @@ h2 {
 }
 
 
-
-
 header { 
   list-style:none;
   margin-bottom: 20px;
   background-color:white;
   height: auto;
   border-bottom:solid 1px #dddddd;
+}
+
+/*Clearfix to Cancel out Float and Push Footer to Bottom*/
+
+.clearfix::after {
+    content: " ";
+    display: table;
+    clear: both;
+
+}
+
+footer {
+    padding: 30px;
+    color: #777777;
+    font-family:'Arial', 'Helvetica Neue', Helvetica, sans-serif;
+    background: #666666;
+    clear: both;
+    margin-top:10px;
+    width: 100%;
+    border-top: solid 4px #4aaaa5;
 }
 
 #menu {
@@ -67,11 +86,6 @@ header {
 
 }
 
-#stackoverflowimage {
-    width:40px;
-    height:40px;
-    border:0;
-}
 
 #logo-text {
     margin-top:20px;
@@ -133,19 +147,9 @@ header {
     line-height: 2;
 }
 
+/*ABOUT PAGE STYLING*/
 
-#PortfolioImageContainer {
-    margin-left: 35px ;
-}
-
-#PortfolioImageContainer .RecentWork:nth-child(odd){
-    margin-right:10px;
-}
-
-#PortfolioImageContainer .RecentWork:nth-child(even){
-    margin-left:10px;
-}
-
+/* About Page Image */
 
 .ProfileImage {
     display: inline-block;
@@ -153,6 +157,27 @@ header {
     margin-right:10px;
     margin-bottom:10px;
 }
+
+
+/*PORTFOLIO PAGE STYLING*/
+
+
+/*Centering All Images in Portfolio Container by adding Margin on Left*/
+#PortfolioImageContainer {
+    margin-left: 35px ;
+}
+
+/*Creating Maring on the Right of all the Portfolio Images in the left Column*/
+#PortfolioImageContainer .RecentWork:nth-child(odd){
+    margin-right:10px;
+}
+
+
+/*Creating Margin on the Left of All Portfolio Images in the Right Column*/
+#PortfolioImageContainer .RecentWork:nth-child(even){
+    margin-left:10px;
+}
+
 
 .RecentWork {
     float:left;
@@ -165,6 +190,7 @@ header {
     width: 100%;
 }
 
+/*Styling All <p> tags on Portfolio Images*/
 .RecentWork p {
     background-color: teal;
     width: 100%;
@@ -176,6 +202,9 @@ header {
 }
 
 
+/*CONTACT PAGE STYLING*/
+
+/*Styling First Name, Last Name and Message Areas on Form*/
 input[type=text], textarea {
     width: 100%; 
     padding: 12px;  
@@ -186,7 +215,7 @@ input[type=text], textarea {
     font-family:'Arial', 'Helvetica Neue', Helvetica, sans-serif;
 }
 
-
+/*Styling Submit button on form*/
 input[type=submit] {
     background-color: #4aaaa5 ;
     color: white;
@@ -196,22 +225,4 @@ input[type=submit] {
     font-family:'Arial', 'Helvetica Neue', Helvetica, sans-serif;
 
 
-}
-
-.clearfix::after {
-    content: " ";
-    display: table;
-    clear: both;
-
-}
-
-footer {
-    padding: 30px;
-    color: #777777;
-    font-family:'Arial', 'Helvetica Neue', Helvetica, sans-serif;
-    background: #666666;
-    clear: both;
-    margin-top:10px;
-    width: 100%;
-    border-top: solid 4px #4aaaa5;
 }

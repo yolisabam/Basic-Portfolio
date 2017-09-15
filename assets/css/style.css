@@ -126,6 +126,55 @@ header {
     color:#777777;
     font-family:'Arial', 'Helvetica Neue', Helvetica, sans-serif;
 }
+#contact-me .inside-content-wrapper {
+    text-align: center;
+}
+.inside-content-wrapper p {
+    line-height: 2;
+}
+
+
+#PortfolioImageContainer {
+    margin-left: 35px ;
+}
+
+#PortfolioImageContainer .RecentWork:nth-child(odd){
+    margin-right:10px;
+}
+
+#PortfolioImageContainer .RecentWork:nth-child(even){
+    margin-left:10px;
+}
+
+
+.ProfileImage {
+    display: inline-block;
+    float:left;
+    margin-right:10px;
+    margin-bottom:10px;
+}
+
+.RecentWork {
+    float:left;
+    margin-bottom:20px;
+    width:47%;
+    position:relative;
+}
+
+.PortfolioImage {
+    width: 100%;
+}
+
+.RecentWork p {
+    background-color: teal;
+    width: 100%;
+    color: white;
+    position: absolute;
+    bottom: 15px;
+    text-align: center;
+    font-family: 'Georgia', Times, Times New Roman, serif;
+}
+
 
 input[type=text], textarea {
     width: 100%; 
@@ -136,6 +185,7 @@ input[type=text], textarea {
     margin-bottom: 16px; 
     font-family:'Arial', 'Helvetica Neue', Helvetica, sans-serif;
 }
+
 
 input[type=submit] {
     background-color: #4aaaa5 ;
